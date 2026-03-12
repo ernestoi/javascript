@@ -104,5 +104,7 @@ console.log(mensaje);
 const nota = 5;
 const calificacion = nota>= 8 ? "Eres promedio" : nota<=7 ? "Eres bobo":"nada";
 console.log(calificacion);
-
+const año=2025;
+const momento = año<=2025 ? "Fueron los mejores momentos" : "El presente esta por venir";
+console.log(momento)
 
