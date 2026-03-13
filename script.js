@@ -108,3 +108,25 @@ const año=2025;
 const momento = año<=2025 ? "Fueron los mejores momentos" : "El presente esta por venir";
 console.log(momento)
 
+/* STRINGS */
+let myName = "Brian";
+let geeting = "Hola, " + myName + "!";
+console.log(typeof geeting);
+console.log(geeting);
+
+// LONGITUD DE CADENA DE TEXTO
+console.log(geeting.length);
+
+// ACCESO A CARACTERES empieza desde 0
+console.log(geeting[0]);
+console.log(geeting[2]);
+
+// MÉTODOS COMÚNES
+console.log(geeting.toUpperCase());//.toUpperCase() VUELVE EL TEXTO A MAYUSCULAS
+console.log(geeting.toLowerCase()); //.toLowerCase() vuelve el texto a minusculas
+console.log(geeting.indexOf("Brian")); // .indexOf("Brian") vuelve el numero donde empieza la palabra Brais. B es la primera letra rsp: 6
+console.log(geeting.indexOf("mango")); // mango, empieza con m, pero esa palabra no existe, rsp: -1
+console.log(geeting.includes("Hola")); // .includes("") nos avisa si en la variable existe el texto dentro, TRUE OR FALSE
+console.log(geeting.includes("Brian"));
+console.log(geeting.includes("brais"));
+console.log(geeting.slice(0, 10));
