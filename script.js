@@ -129,4 +129,29 @@ console.log(geeting.indexOf("mango")); // mango, empieza con m, pero esa palabra
 console.log(geeting.includes("Hola")); // .includes("") nos avisa si en la variable existe el texto dentro, TRUE OR FALSE
 console.log(geeting.includes("Brian"));
 console.log(geeting.includes("brais"));
-console.log(geeting.slice(0, 10));
+console.log(geeting.slice(0, 10)); // .slice(inicial_numero, final_numero) recorta el texto desde el valor inicial 0 hasta el valor final 10 que es 9, es decir: 10-1=9
+console.log(geeting.replace("Brian", "pipipipi")) // .replace("texto a buscar", "texto a reemplazar"); el primer valor busca y el 2do valor reemplaza el primero.
+
+//template literals (plantillas literales)
+
+let message = `Hola este e smi 
+salto de línea`;
+let email = `isaiascoca123@gmail.com`;
+console.log(message)
+console.log(`Hola, ${myName}! tu email es: ${email}`) // comillas invertidas, permite incluir variables y texto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
