@@ -108,6 +108,11 @@ const año=2025;
 const momento = año<=2025 ? "Fueron los mejores momentos" : "El presente esta por venir";
 console.log(momento)
 
+/* 
+++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++
+*/
 /* STRINGS */
 let myName = "Brian";
 let geeting = "Hola, " + myName + "!";
@@ -138,8 +143,34 @@ let message = `Hola este e smi
 salto de línea`;
 let email = `isaiascoca123@gmail.com`;
 console.log(message)
-console.log(`Hola, ${myName}! tu email es: ${email}`) // comillas invertidas, permite incluir variables y texto
+console.log(`Hola, ${myName}! tu email es: ${email}`) // comillas invertidas, permite incluir variables y texto.
 
+/* 
+++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++
+*/
+// CONDICIONALES
+// if, else if, else
+// se utiliza para ejecutar un bloque de código si la condición es verdadera.
+
+let age = 37;
+if(age == 37) {
+    console.log("La edad es 37");
+}// else -> Si no es verdadero se ejecuta este código
+else{
+    console.log("La edad no es 37");
+}
+
+// else if -> Utiliza para hacer condiciones intermedias
+// Verificar si es mayor de edad
+if (age == 37) {
+    console.log("Tienes 37 años, eres apto");
+} else if (age >= 18) {
+    console.log("Eres mayor de edad, eres apto");
+} else{
+    console.log("Eres menor de edad");
+}
 
 
 

@@ -15,10 +15,10 @@ let nombre1 = "Cómo estás?";
 let names = "Hola";
 let comparacion = saludo1==names;
 let mismalongitud = saludo1.length ==  names.length
-// console.log("palabra1" + "palabra2");
+console.log("saludo1"+","+" names");
 console.log(nombre1.length);
 console.log(nombre1[0]);
-console.log(nombre1[10]);
+console.log(nombre1.length -1); // mostrar el útimo cracter
 console.log(nombre1.toUpperCase());
 console.log(nombre1.toLowerCase());
 let texto_lineas_dif = `Hola, mucho gusto 
@@ -26,8 +26,8 @@ poder saber
 de ti....`;
 console.log(texto_lineas_dif);
 console.log(`${saludo1} ${names}, ${nombre1}....`)
-console.log(nombre1.replace(" ", "-"));
+console.log(nombre1.replaceAll(" ", "-"));
 console.log(nombre1.includes("estás"));
 console.log(comparacion);
 console.log(mismalongitud);
-
+console.log(saludo1 + " " + nombre1);   
