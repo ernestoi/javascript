@@ -165,14 +165,44 @@ else{
 // else if -> Utiliza para hacer condiciones intermedias
 // Verificar si es mayor de edad
 if (age == 37) {
-    console.log("Tienes 37 años, eres apto");
+    //console.log("Tienes 37 años, eres apto");
 } else if (age >= 18) {
     console.log("Eres mayor de edad, eres apto");
 } else{
     console.log("Eres menor de edad");
 }
 
-
+// --------------------------------------
+// CONDICIONAL SWITCH
+// --------------------------------------
+let day = 5;
+let datName
+switch (day) {
+    case 0:
+        dayName = "Lunes"
+        break
+    case 1:
+        dayName = "Martes"
+        break
+    case 2:
+        dayName = "Miercoles"
+        break
+    case 3:
+        dayName = "Jueves"
+        break
+    case 4:
+        dayName = "Viernes"
+        break
+    case 5:
+        dayName = "Sábado"
+        break
+    case 6:
+        dayName = "Domingo"
+        break
+    default:
+        dayName = "Número de día incorrecto"; // es como tener un else en caso de que no se cumpla ninguno de arriba.
+}
+console.log(dayName)
 
 
 
