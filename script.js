@@ -251,12 +251,31 @@ console.log(myArray9);
 myArray9.unshift("Eliminado1","Eliminado2");
 console.log(myArray9);
 // length -> cuenta cuántos elementos tiene el array y nos dice
-console.log(myArray9.length)
-// clear -> limpiar el array
-myArray9 = []
-console.log(myArray9)
+console.log(myArray9.length);
+// clear -> limpiar el array, se debe declarar la lista vacia
+myArray9 = []  
+console.log(myArray9);
+// slice -> Extrae una porción de un array o string, indicando un índice de inicio(incluido) y un índice final(excluido) 
+myArray9.push("Isaias", "Coca", 21, "Hombre");
+console.log(myArray9);
+let myNewArray = myArray9.slice(1,3);
+console.log(myNewArray);
 
+myArray10 = [1,2,3,4,5,6];
+let myArray11 = myArray10.slice(1,5);
+console.log(myArray11);
 
+//splice -> Permite eliminar, sustituir nuevos datos-
+let meses = ["enero","febrero","lunes","martes"];
+let dias = meses.splice(2); // resultante ["lunes", "martes"]
+console.log(dias);
 
-
-
+// splice -> Eliminar un solo elemento de un arreglo
+// array.splice(inicio, cantidadEliminar, elemento1, elemento2, ...)
+let frutas = ["fresa", "manzana", "col", "zanahoria"];
+//              [0]        [1]     [2]       [3]
+frutas.splice(2,3); // eliminamos las verduras
+console.log(frutas);
+// AGREGAR ELEMENTOS AL ARRAY
+frutas.splice(1,0, "Uva","mora")
+console.log(frutas)
