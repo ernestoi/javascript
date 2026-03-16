@@ -47,6 +47,7 @@ numeros2.splice(2,1,25);
 console.log(numeros2);
 
 /*
+5. Ejercicio
 
 // elimina los dos últimos animales
 // agrega "leon" al final
@@ -59,6 +60,16 @@ console.log(animales);
 animales.push("leon");
 console.log(animales);
 
+/*
+6. Ejericio
+
+// inserta "Colombia" en la posición 1
+// elimina "Chile"
+*/
+let paises = ["Ecuador", "Peru", "Chile", "Argentina"];
+paises.splice(1,0,"Colombia");
+paises.splice(3,1);
+console.log(paises);
 
 
 
