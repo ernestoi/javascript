@@ -203,14 +203,58 @@ switch (day) {
         dayName = "Número de día incorrecto"; // es como tener un else en caso de que no se cumpla ninguno de arriba.
 }
 console.log(dayName)
+/* 
+++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++
+*/
+// ESTRUCTURAS DE DATOS
+// -> Nos permite almacenar varios datos (conjunto de datos) en una variable
+// ARRAY = listas
+let myArray = [3];
+let myArray2 = new Array(3);
+console.log(myArray)
+console.log(myArray2)
+// INICIALIZACION
+let myArray3 = [1,2,3,4,5];
+let myArray4 =  new Array(3);
+console.log(myArray3);
+console.log(myArray4);
+// EJEMPLO
+let myArray5 = ["Isaias", "Coca", 21, "Hombre"];
+let myArray6 = new Array("Isaias", "Coca", 21, "Hombre")
+console.log(myArray5);
+console.log(myArray6);
+
+// ejemplo
+myArray7 = [];
+myArray7[0] = "Frío";
+//myArray7[1] = "Caliente";
+myArray7[2] = "Tibio";
+console.log(myArray7);
 
 
-
-
-
-
-
-
+// METODOS COMUNES APLICADOS.
+myArray9=[];
+//push -> Nos permiten insertar datos al final de un array "vacío".
+myArray9.push("Isaas");
+myArray9.push("Fernando");
+myArray9.push("Monica");
+console.log(myArray9);
+// pop -> Elimina el último elemento de un array.
+myArray9.pop()
+console.log(myArray9);
+// shift -> Eliminar el primer elmento
+console.log(myArray9.shift());
+console.log(myArray9);
+// unshift -> Inserta elementos al principio del array
+myArray9.unshift("Eliminado1","Eliminado2");
+console.log(myArray9);
+// length -> cuenta cuántos elementos tiene el array y nos dice
+console.log(myArray9.length)
+// clear -> limpiar el array
+myArray9 = []
+console.log(myArray9)
 
 
 
