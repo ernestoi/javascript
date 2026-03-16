@@ -276,6 +276,8 @@ let frutas = ["fresa", "manzana", "col", "zanahoria"];
 //              [0]        [1]     [2]       [3]
 frutas.splice(2,3); // eliminamos las verduras
 console.log(frutas);
+
 // AGREGAR ELEMENTOS AL ARRAY
 frutas.splice(1,0, "Uva","mora")
 console.log(frutas)
+
