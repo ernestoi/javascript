@@ -254,11 +254,132 @@ if (lista3.indexOf("queso") === -1) {
     console.log(newArr);
 }
 
+/* 
+16. EJERCICIO
+
+// 1. elimina el primer elemento
+// 2. elimina el último elemento
+// 3. agrega 1 al inicio
+// 4. agrega 35 al final
+// 5. reemplaza 15 por 100 (usa splice)
+// 6. crea un nuevo array con los elementos desde 10 hasta 25 (usa slice)
+// 7. muestra:
+//    - el array final
+//    - el nuevo array
+//    - la longitud del array final
+*/
+console.log('------------------------------------------')
+console.log("16. EJERCICIO");
+let datos2 = [5, 10, 15, 20, 25, 30];
+index_35 = datos.indexOf(35);
+datos2.shift();
+datos2.pop();
+datos2.unshift(1);
+datos2.push(35);
+datos2.splice(index_35, 1, 100);
+newArray = datos2.slice(1, datos2.length -1)
+console.log(newArray)
+console.log(datos2)
+console.log(`La longitud del array final es: ${datos2.length}`)
+
+/* 
+17. EJERCICIO
+// 1. crea una copia del array llamada copia
+// 2. en copia:
+//    - elimina el primer elemento
+//    - agrega 5 al inicio
+//    - elimina el último elemento
+//    - agrega 60 al final
+// 3. en original:
+//    - elimina 30 usando splice
+// 4. crea un nuevo array llamado resultado que contenga:
+//    - desde 20 hasta 50 (usa slice sobre original)
+// 5. muestra:
+//    - original
+//    - copia
+//    - resultado
+//    - longitud de cada uno
+*/
+console.log('------------------------------------------')
+console.log("17. EJERCICIO");
+let original = [10, 20, 30, 40, 50];
+let copia = original.slice();
+copia.shift();
+copia.unshift(5);
+copia.pop();
+copia.push(60);
+original.splice(2,1);
+let resultante_original = original.slice(1,4);
+console.log(copia.length);
+console.log(original.length);
+//console.log(resultante.length);
+
+/* 
+18. EJERCICIO
+
+// encuentra la primera posición de "azul"
+
+Ejercicios indexOf y lastIndexOf
+*/
+console.log('------------------------------------------')
+console.log("18. EJERCICIO");
+let colores = ["rojo", "azul", "verde", "azul", "amarillo"];
+console.log(colores.indexOf("azul"));
+console.log(colores.lastIndexOf("azul"));
+
+console.log('------------------------------------------')
+console.log("19. EJERCICIO");
+let frutas1 = ["manzana", "pera", "uva"];
+if (frutas.indexOf("pera" !== -1 )) {
+    console.log("Si existe..")
+} else {
+    console.log("No existe..")
+}
+
+console.log('------------------------------------------')
+console.log("20. EJERCICIO");
+// elimina el número 15 usando indexOf + splice
+let numeros3 = [5, 10, 15, 20];
+let eliminar = numeros3.splice(numeros3.indexOf(15), 1)
+console.log(numeros3);
+
+console.log('------------------------------------------')
+console.log("20. EJERCICIO");
+// reemplaza "Luis" por "Pedro" usando indexOf
+let nombres = ["Ana", "Luis", "Carlos"];
+nombres.splice(nombres.indexOf("Luis"),1,"pedro");
+console.log(nombres);
+
+console.log('------------------------------------------')
+console.log("21. EJERCICIO");
+// muestra:
+// - primera posición de 2
+// - última posición de 2
+let datos3 = [1,2,3,2,4,2,5];
+console.log(datos3.indexOf(2))
+console.log(datos3.lastIndexOf(2))
 
 
+console.log('------------------------------------------')
+console.log("21. EJERCICIO");
+// si existe 40 → elimínalo
+// si no → agrega 40
+let numeros4 = [10, 20, 30];
+if (numeros4.indexOf(40) !== -1) {
+    numeros4.splice(numeros4.indexOf(40), 1)
+    console.log(numeros4);
+} else {
+    numeros4.push(40);
+    console.log(numeros4);
+}
 
 
-
+console.log('------------------------------------------')
+console.log("21. EJERCICIO");
+// elimina SOLO la última aparición de 200
+let lista4 = [100, 200, 300, 200, 400, 200];
+item_eliminado = lista4.splice(lista4.lastIndexOf(200), 1);
+console.log(lista4);
 
 
 

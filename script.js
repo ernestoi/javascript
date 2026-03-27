@@ -281,3 +281,119 @@ console.log(frutas);
 frutas.splice(1,0, "Uva","mora")
 console.log(frutas)
 
+// -----> CICLO FOR <-----
+/* 
+
+for(inicio; condicion; aumento/decremento i++ i--){
+    // codigo que se repite
+}
+
+// i es la posición del array
+// nombre_array[i] -> accedemos al valor de la posicion de i 
+
+// SI QUEREMOS ACCEDER A UNA POSICION MAS ARRIBA uSAMOS NOMBRE_ARRAY[i + 1]
+// PARA CONTROLAR EL i + 1 debemos restar al for i < nombre_array.length -1   --> esto permite que no se sobre salga cuando hagamos i + 1
+*/
+let numeros = [10, 20, 30, 40];
+for (let i = 0; i < numeros.length; i++) {
+    console.log(numeros[i]);
+}
+console.log(" ejercicios")
+let numeros1 = [10, 20, 30, 40];
+for (let i = 0; i < numeros1.length; i++){
+    numeros1[i] = numeros1[i]+5;
+    
+}
+console.log(numeros1);
+
+
+
+console.log(" ejercicios")
+let datos = [2, 4, 6, 8];
+// multiplica cada número por 2 usando for
+for (i=0; i < datos.length; i++) {
+    datos[i] = datos[i]*2
+    console.log(datos)
+}
+
+
+console.log(" ejercicios")
+// 1. crea un nuevo array llamado resultado (vacío)
+// 2. recorre numeros con for
+// 3. agrega al nuevo array cada número multiplicado por 2
+// 4. muestra:
+//    - numeros (no debe cambiar)
+//    - resultado (con los nuevos valores)
+let numeros2 = [3, 6, 9, 12];
+let resultado = [];
+for (i = 0; i < numeros2.length; i++) {
+    resultado.push(numeros2[i]*2);
+    console.log(resultado);
+}
+
+
+
+
+console.log(" ejercicios")
+let numeros3 = [3, 7, 10, 15, 20, 25];
+let resultado1 = [];
+
+// recorre el array con for
+// agrega al array resultado SOLO los números mayores a 10
+// muestra resultado
+for (let i=0; i < numeros3.length; i++) {
+    if (numeros3[i]>10) {
+        resultado1.push(numeros3[i]);
+        console.log(resultado1);
+    }
+}
+
+
+
+
+
+// 1. crea un nuevo array llamado resultado
+// 2. recorre el array con for
+// 3. agrega al resultado TODOS los números excepto el 20
+// 4. muestra:
+//    - array original
+//    - resultado
+//    - longitud de resultado
+console.log(" ejercicios")
+let numeros4 = [10, 20, 30, 20, 40, 20];
+let resultado2 = [];
+for (let i = 0; i < numeros4.length; i++) {
+    if (numeros4[i] !== 20) {
+        resultado2.push(numeros4[i]);
+    }
+}
+
+/* 
+
+----------------SETS --------------------------------------
+*/
+
+// Declaración
+let mySet = new Set()
+console.log(mySet);
+
+// INICIALIZACION ya con datos
+let mySet2 = new Set(["Ernesto", "Coca", 24, "isaiascoca123@gmail.com"]) // no olvidar los corchetes si se va a inicializar con valores
+console.log(mySet2);
+
+// METODOS COMUNES
+// 1.  add y delete
+mySet2.add("https://facebook.com");
+
+
+
+
+
+
+
+
+
+
+
+
+
