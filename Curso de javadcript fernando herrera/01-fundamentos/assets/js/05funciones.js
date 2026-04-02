@@ -5,20 +5,31 @@ function saludar() {
     console.log('Hola Mundo');
 }
 
-// argumentos en una función
+// argumentos en una << FUNCION >>
 function saludar3(nombre) {
     console.log('Hola Mundo ' + nombre);
+    return 1;
 }
 saludar3('Fernando');
 
+// RETORNO DE UNA << FUNCION NORMAL>>
+function sumar(a,b) {
+    return a+b;
+}
+console.log(sumar(1,3));
 
-// función anónima -> el nombre de la función se le asigna con la variable const saludar1
+// << FUNCION anónima >>  -> el nombre de la función se le asigna con la variable const saludar1
 const saludar1 = function(nombre){
     console.log("holaaa, funcion anónima "+nombre);
 }
 // FUNCION ANONIMA CON ARGUMENTOS
 saludar1("Fernando const", 40, true, 'costa rica');
 
+// RETORNO DE UNA FUNCION NORMAL
+function saludar3(nombre) {
+    console.log('Hola Mundo ' + nombre);
+}
+saludar3('Fernando');
 
 
 
@@ -33,6 +44,18 @@ const  saludarFlecha2 = (hora) => {
     console.log("Función de flecha con argumentos: "+ hora+'PM');
 }
 saludarFlecha2('12:23');
+
+// RETORNO DE UNA FUNCION FLECHA
+const suma2 = (a,b) => {
+    return a+b; // retornar a+b
+}
+console.log(suma2(0,3));
+
+// EJERCIICO DE FLECHA CON RETORNO
+console.log('*******************************')
+const getAleatorio = () => Math.random();// con esto obtenemos números aleatorios.
+console.log('El número aleatorio es: '+ getAleatorio());
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // EJERCICIO 1
 const datos = (nombre, edad) =>{
